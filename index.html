@@ -30,13 +30,14 @@ summary b{font-size:1.05rem}summary span{display:inline-block;align-self:flex-st
 h2{font-size:1.45rem;margin:1.6em 0 .4em}
 .panel{background:#fff;border-radius:18px;padding:18px;box-shadow:0 8px 26px #3b1fa81c;margin-top:10px}
 #add{scroll-margin-top:12px}
+.ok{display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--mut);margin:10px 0 2px}.ok input{width:20px;height:20px;margin:2px 0 0;flex:none}
 input,select,textarea{width:100%;padding:13px;margin:6px 0;border:1.5px solid #ddd8f5;border-radius:10px;font-size:1rem;font-family:inherit;background:#fbfaff}
 input:focus{outline:none;border-color:var(--vio);box-shadow:0 0 0 3px #7c3aed33}
 button{width:100%;padding:15px;border:0;border-radius:12px;background:linear-gradient(90deg,var(--vio),var(--teal));color:#fff;font-size:1.08rem;font-weight:700;font-family:Poppins;margin-top:8px;cursor:pointer;box-shadow:0 8px 20px #7c3aed40}
 .pro{background:#b9b6cc;box-shadow:none;cursor:default}
 .card{background:linear-gradient(135deg,#2a1380,var(--teal));color:#fff;border-radius:16px;padding:18px;box-shadow:0 8px 24px #2a138040}
 footer{background:#16133a;color:#cfcbe8;text-align:center;padding:24px 16px}footer .s{color:#cfcbe8}footer b{font-family:Poppins;color:#fff}
-</style></head><body><header class="hero"><div class="in"><div class="brand"><span>🎓</span>What Students Pay</div>
+</style><script defer src="/form.js"></script></head><body><header class="hero"><div class="in"><div class="brand"><span>🎓</span>What Students Pay</div>
 <h1>What Students Pay</h1><p>The real monthly cost of studying at each university, from students who go there now. Free to start.</p><a class="cta" href="#add">➕ Add your costs</a></div></header>
 <div class="trust"><div class="box"><div class="chips"><span class="chip">✅ Official sources linked</span><span class="chip v">📅 Last checked 14 Oct 2026</span><span class="chip">🌍 20 universities</span></div><p class="s">Official numbers below are visa and government figures, checked 14 Oct 2026. Rent, food and fees come from student reports. Where a number is an estimate or not yet checked for 2026, it says so.</p></div></div>
 <main>
@@ -102,12 +103,13 @@ footer{background:#16133a;color:#cfcbe8;text-align:center;padding:24px 16px}foot
 <p class="lock">🔒 Rent near campus, food, surprise fees: <i>from real students</i> – add your costs to unlock.</p>
 <p class="s">Source: <a href="https://www.auswaertiges-amt.de/en/visa-service/-/231148" rel="nofollow">official page</a> · last checked 14 Oct 2026</p></details>
 <section class="panel" id="add"><h2 style="margin-top:0">📝 Add your costs, unlock your school</h2><p>Share what you really pay and get the full page for your university.</p>
-<form action="https://formsubmit.co/yim1976@msn.com" method="POST"><input type="hidden" name="_subject" value="New What Students Pay entry"><input type="hidden" name="_captcha" value="false">
+<form class="fs" method="POST"><input type="hidden" name="_subject" value="New What Students Pay entry"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 <input name="university" placeholder="Your university" required><input name="city" placeholder="City"><input name="rent" placeholder="Rent per month (and currency)" required>
 <input name="food" placeholder="Food per month"><input name="wage" placeholder="Part-time job pay per hour"><input name="fees" placeholder="Surprise fees (what & how much)">
 <input name="visa" placeholder="What your visa really cost"><input type="email" name="email" placeholder="Your email (to unlock)" required><input name="referred_by" placeholder="Friend's email who invited you (optional)">
+<label class="ok"><input type="checkbox" name="consent" value="yes" required> I'm 16 or older and I agree to the <a href="/privacy.html">privacy policy</a>. Your costs are shown without your name or email.</label>
 <button>Add my costs</button></form></section>
 <h2>🎁 Invite a friend, get a free month</h2><p>Every friend who adds their costs gives you one free month of Pro. Put your email in the "invited by" box when they sign up.</p>
 <h2>📲 Share your real cost</h2><div class="card"><b>My real cost at ___</b><br>Rent ___ · Food ___ · Job pay ___/hr<br><small>whatstudentspay.com</small></div><p class="s">Shareable card for your WhatsApp and Telegram groups – coming soon.</p>
 <h2>⭐ Pro</h2><p>Every university's full page, compare schools, alerts when fees change.</p><button class="pro" disabled>Pro coming soon</button>
-</main><footer><b>🎓 What Students Pay</b><p class="s">Questions? Use the form above. © 2026 What Students Pay</p></footer></body></html>
+</main><footer><b>🎓 What Students Pay</b><p class="s">Questions? Use the form above. <a href="/privacy.html" style="color:#fff">Privacy</a> · © 2026 What Students Pay</p></footer></body></html>
